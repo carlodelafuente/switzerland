@@ -44,7 +44,7 @@ p {
 
 /* --- LINKS ---------------------------------------------------------*/
 
-/* a,
+a,
 a:visited { 
 	color: #008000;
 	text-decoration: none;
@@ -58,12 +58,13 @@ a:active {
 
 a:focus {
 	outline: 1px dotted;
-} */
+}
 
 /* --- ELEMENTS -------------------------------------------------------*/
 
+/* --- INDEX ----------------------------------------------------------*/
 .body-font {
     font-family: "Koh Santepheap", serif;
-    font-weight: 350;
+    font-weight: 500;
     background-color: rgb(247, 202, 209);
 }
