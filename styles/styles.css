@@ -65,12 +65,5 @@ a:focus {
 .body-font {
     font-family: "Koh Santepheap", serif;
     font-weight: 350;
-    /* background-color: rgb(247, 202, 209); */
+    background-color: rgb(247, 202, 209);
 }
-
-.nav-title {
-    font-size: .5rem;
-    font-weight: 550;
-    text-align: center;
-}
-
