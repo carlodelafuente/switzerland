@@ -44,13 +44,13 @@ p {
 a,
 a:visited { 
 	color: #008000;
-	text-decoration: none;
+	text-decoration-line: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-	text-decoration-color
+	text-decoration-color: none;
 }
 
 a:focus {
@@ -61,19 +61,31 @@ a:focus {
 
 /* --- INDEX ----------------------------------------------------------*/
 
+.body-font {
+	background-color: rgb(211, 211, 211);
+}
+
 .nav-menu ul {
-	background-color: rgb(255, 255, 255);
 	display: flex;
 	gap: 1rem;
 	list-style-type: none;
 	justify-content: flex-end;
-	padding: .5rem;
+	padding: 1rem;
 	margin-top: 0;
+	border-bottom: solid;
+}
+
+.nav-menu a {
+	font-weight: 600;
+	color: black;
 }
 
 
 .vid-box {
 	position: relative;
+	padding
+
+	
 
 }
 
@@ -117,3 +129,67 @@ a:focus {
 }
 
 /* --- FOOD GUIDE ----------------------------------------------------------*/
+
+.food-guide {
+	width: 70%;
+	text-align: center;
+}
+
+.food-main {
+	margin: 0 auto;
+	width: 70%;
+}
+
+
+.food-figure {
+	width: 70%;
+	height: auto;
+}
+
+.food-figure img {
+	border-radius: 3rem;
+	width: 100%;
+}
+
+@media (min-width: 50em) {
+	.nav-menu ul {
+		justify-content: center;
+	}
+
+	.food-main {
+		width: 100%;
+	}
+
+	.food-article {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.food-figure img {
+		max-width: 40%;
+		padding: .5rem;
+	}
+
+
+	.food-figure figcaption {
+		margin-top: .5rem;
+	}
+
+	.food-figure {
+		display: flex;
+	}
+
+}
+
+/* --- ACTIVITIES ----------------------------------------------------------*/
+
+
+
+
+@media (min-width: 50em) {
+
+	.nav-menu ul {
+		justify-content: center;
+	}
+
+}
