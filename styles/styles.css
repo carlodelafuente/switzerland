@@ -18,7 +18,7 @@ html {
 /* Typography
 --------------------------------------------- */
 body {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: "Koh Santepheap", serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -29,11 +29,8 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: Georgia, Times, "Times New Roman", serif;
+h3 {
+	font-family: "Koh Santepheap", serif;
 	margin: .5em 0;
 	font-size: 1.75rem;
 }
@@ -44,33 +41,249 @@ p {
 
 /* --- LINKS ---------------------------------------------------------*/
 
-/* a,
+a,
 a:visited { 
 	color: #008000;
-	text-decoration: none;
+	text-decoration-line: none;
 }
 
 a:hover,
 a:focus,
 a:active {
-	text-decoration: underline;
+	text-decoration-color: none;
 }
 
 a:focus {
 	outline: 1px dotted;
-} */
+}
 
 /* --- ELEMENTS -------------------------------------------------------*/
 
+/* --- INDEX ----------------------------------------------------------*/
+
 .body-font {
-    font-family: "Koh Santepheap", serif;
-    font-weight: 350;
-    /* background-color: rgb(247, 202, 209); */
+	background-color: rgb(211, 211, 211);
 }
 
-.nav-title {
-    font-size: .5rem;
-    font-weight: 550;
-    text-align: center;
+.nav-menu ul {
+	display: flex;
+	gap: 1rem;
+	list-style-type: none;
+	justify-content: flex-end;
+	padding: 1rem;
+	margin-top: 0;
+	border-bottom: solid;
 }
 
+.nav-menu a {
+	font-weight: 600;
+	color: black;
+}
+
+
+.vid-box {
+	position: relative;
+
+}
+
+.welcome-banner {
+	position: absolute;
+	bottom: 12rem;
+	left: 0;
+	right: 0;
+	width: fit-content;
+	padding: 2rem 4rem;
+	margin: 0 auto;
+	color: rgb(255, 255, 255);
+}
+
+.switzerland-info {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.switzerland-info p {
+	border-top: solid;
+	border-bottom: solid;
+}
+
+.footer {
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	margin-top: 5rem;
+	padding: .2rem;
+}
+
+@media (min-width: 50em) {
+	.welcome-banner {
+		position: absolute;
+		bottom: 17rem;
+	}
+
+	.nav-menu ul {
+		justify-content: center;
+	}
+}
+
+/* --- FOOD GUIDE ----------------------------------------------------------*/
+
+.food-guide {
+	text-align: center;
+}
+
+.food-main {
+	margin: 0 auto;
+	width: 70%;
+}
+
+
+.food-figure {
+	width: 70%;
+	height: auto;
+}
+
+.food-figure img {
+	border-radius: 3rem;
+	width: 100%;
+}
+
+.food-figure figcaption {
+	background-color: rgb(235, 235, 228);
+	padding: .5rem 2rem;
+	border-radius: 3rem;
+}
+
+@media (min-width: 50em) {
+	.nav-menu ul {
+		justify-content: center;
+	}
+
+	.food-main {
+		width: 100%;
+	}
+
+	.food-article {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.food-figure img {
+		max-width: 40%;
+		padding: .5rem;
+	}
+
+
+	.food-figure figcaption {
+		margin-top: .5rem;
+	}
+
+	.food-figure {
+		display: flex;
+	}
+
+}
+
+/* --- ACTIVITIES ----------------------------------------------------------*/
+
+.activities-title {
+	text-align: center;
+}
+
+.activities-main {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.activities-figure img {
+	border-radius: 3rem;
+}
+
+.activities-caption {
+	background-color: rgb(235, 235, 228);
+	padding: .5rem 2rem;
+	border-radius: 3rem;
+	margin-left: .5rem;
+}
+
+
+
+@media (min-width: 50em) {
+
+	.nav-menu ul {
+		justify-content: center;
+	}
+
+	.activities-main {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.activities-article {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+}
+
+/* --- CREDITS ----------------------------------------------------------*/
+
+.credits-main {
+	width: 100%;
+}
+
+.credits-title {
+	text-align: center;
+	font-size: 3rem;
+	border-bottom: solid;
+}
+
+.credits-article {
+	text-align: center;
+}
+
+.credits-article p {
+	background-color: rgb(235, 235, 228);
+	padding: .5rem 2rem;
+	border-radius: 3rem;
+}
+
+
+@media (min-width: 50em) {
+
+	.nav-menu ul {
+		justify-content: center;
+	}
+
+	.credits-article {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.fg-grid {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		
+	}
+
+	.act-grid {
+		grid-column: 3 / 4;
+		grid-row: 1 / 2;
+	}
+
+	.act-info-grid {
+		grid-column: 3 / 4;
+		grid-row: 3 / 4;
+	}
+
+	.expatica-grid {
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+	}
+
+	.bbc-info-grid {
+		grid-column: 2 / 3;
+		grid-row: 3 / 4;
+	}
+
+}
