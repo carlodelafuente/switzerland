@@ -131,7 +131,6 @@ a:focus {
 /* --- FOOD GUIDE ----------------------------------------------------------*/
 
 .food-guide {
-	width: 70%;
 	text-align: center;
 }
 
@@ -149,6 +148,12 @@ a:focus {
 .food-figure img {
 	border-radius: 3rem;
 	width: 100%;
+}
+
+.food-figure figcaption {
+	background-color: rgb(235, 235, 228);
+	padding: .5rem 2rem;
+	border-radius: 3rem;
 }
 
 @media (min-width: 50em) {
@@ -183,6 +188,25 @@ a:focus {
 
 /* --- ACTIVITIES ----------------------------------------------------------*/
 
+.activities-title {
+	text-align: center;
+}
+
+.activities-main {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.activities-figure img {
+	border-radius: 3rem;
+}
+
+.activities-caption {
+	background-color: rgb(235, 235, 228);
+	padding: .5rem 2rem;
+	border-radius: 3rem;
+	margin-left: .5rem;
+}
 
 
 
@@ -192,4 +216,17 @@ a:focus {
 		justify-content: center;
 	}
 
+	.activities-main {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.activities-article {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
 }
+
+/* --- CREDITS ----------------------------------------------------------*/
+
